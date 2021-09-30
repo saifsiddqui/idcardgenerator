@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/idcard.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Idcard</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="head">
+                <h1 id="heading">ID Card Generator</h1>
+            </div>
+            <div class="card">
+                <div class="card_left">
+                    <h3 class="title">Enter Student Details</h3>
+                    <form>
+                        <div class="first">
+                            <label id="lab1">Enter Name:</label>
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="sname" class="reg">
+                        </div>
+
+                        <div class="first">
+                            <label>Enter College Name:</label>
+                            <i class="fas fa-university"></i>
+                            <input type="text" id="clgname" class="reg">
+                        </div>
+
+                        <div class="first">
+                            <label id="lab3">Enter Location Name:</label>
+                            <i class="fas fa-street-view"></i>
+                            <input type="text" id="locationname" class="reg">
+                        </div>
+
+                        <div class="first" id="pic">
+                            <label id="lab4">Enter students picture:</label>
+                            <input type="file" id="photo" class="reg">
+                        </div>
+                        <img src="" id="image">
+                    </form>
+
+                    <button id="gcard">Generate Card</button>
+                </div>
+                <div class="card_right">
+                    <div class="generatedid">
+                        <h3 id="tag">Generetd Id Card</h3>
+                        <div class="incont">
+                            <div class="outimg">
+                                <img src="" id="mainimage">
+                            </div>
+                            <div class="details">
+                                <div class="details1">
+                                    <div class="pera">
+                                        <p>Name:</p>
+                                        <p id="p11" class="peras"></p>
+                                    </div>
+                                    <div class="pera">
+                                        <p>College Name:</p>
+                                        <p id="p12" class="peras"></p>
+                                    </div>
+                                    <div class="pera">
+                                        <p>Location:</p>
+                                        <p id="p13" class="peras"></p>
+                                    </div>
+                                    <!-- <p id="p1">Name: <span id="p11"></span></p>
+                                    <p>College Name: <span id="p12"></span> </p>
+                                    <p id="p3">Location: <span id="p13"></span> </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="id.js"></script>
+</body>
+
+</html>
